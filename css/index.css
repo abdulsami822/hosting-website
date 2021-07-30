@@ -113,3 +113,41 @@ a {
 .badge--small {
   font-size: 1.6rem;
 }
+
+/*Lists*/
+
+.list {
+  list-style: none;
+  color: var(--heading-color);
+  padding-left: 0;
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.list--inline {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.list--tick {
+  list-style-image: url(/images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0.5rem;
+  }
+  .list--inline {
+    font-size: 1.5rem;
+  }
+}
