@@ -1,3 +1,4 @@
+/*Color Palette*/
 :root {
   --primary-color: #2584ff;
   --secondary-color: #00d9ff;
@@ -11,6 +12,8 @@
 *::after {
   box-sizing: border-box;
 }
+
+/*Typography*/
 
 html {
   font-size: 62.5%;
@@ -55,5 +58,34 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/*Links*/
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: all 300ms;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
