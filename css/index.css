@@ -354,3 +354,22 @@ a {
     font-size: 1.7rem;
   }
 }
+
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin: 1rem 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__heading {
+  color: var(--heading-color);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 0;
+}
