@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
   color: var(--body-color);
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -93,10 +93,10 @@ a {
 /*Badges*/
 
 .badge {
-  padding: 0.5rem 1.8rem;
   border-radius: 20px;
-  font-weight: 600;
   font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 1.8rem;
   white-space: nowrap;
 }
 
@@ -168,4 +168,51 @@ a {
 
 .icon--primary {
   fill: var(--primary-color);
+}
+
+/*Buttons*/
+
+.btn {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn--accent {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.btn--fill {
+  background: var(--heading-color);
+  color: #fff;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn--outline {
+  background: none;
+  border: 2px solid var(--heading-color);
+  color: var(--heading-color);
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
