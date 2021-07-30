@@ -199,7 +199,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -305,6 +305,7 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
+  width: 0;
 }
 
 .input-group .btn {
@@ -535,6 +536,11 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 7px;
+  min-width: 700px;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
 }
 
 .callout--primary {
@@ -744,10 +750,12 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 2rem;
+  color: var(--heading-color);
+  font-weight: 700;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -778,6 +786,10 @@ a {
 
 .feature:first-of-type {
   margin-top: 6rem;
+}
+
+.feature:last-of-type {
+  margin-bottom: 6rem;
 }
 
 .feature__heading {
@@ -832,6 +844,7 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 3rem;
 }
 
 .footer__brand {
