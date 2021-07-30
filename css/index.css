@@ -210,6 +210,15 @@ a {
   background: #3a8ffd;
 }
 
+.btn--secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background: #1cd6f7;
+}
+
 .btn--accent {
   background: var(--accent-color);
   color: #fff;
@@ -238,6 +247,11 @@ a {
 .btn--outline:hover {
   background: var(--heading-color);
   color: #fff;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 @media (min-width: 1024px) {
@@ -476,5 +490,45 @@ a {
 @media screen and (max-width: 767px) {
   .testimonial {
     overflow: visible;
+  }
+}
+
+/*Callout*/
+.callout {
+  padding: 4rem;
+  border-radius: 7px;
+}
+
+.callout--primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__heading {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.callout__description {
+  font-size: 2.4rem;
+}
+
+.callout .btn {
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid-cols-2 {
+    grid-template-columns: auto 1fr;
+  }
+
+  .callout__content {
+    text-align: left;
   }
 }
