@@ -447,7 +447,7 @@ a {
 .quote {
   font-style: italic;
   color: #5c5577;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -461,12 +461,12 @@ a {
 }
 
 .quote .media__heading {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .quote .media__description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #bcb9cb;
   font-style: normal;
 }
