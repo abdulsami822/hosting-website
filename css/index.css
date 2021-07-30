@@ -190,9 +190,17 @@ a {
   color: #fff;
 }
 
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
 .btn--accent {
   background: var(--accent-color);
   color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
 }
 
 .btn--fill {
@@ -211,8 +219,52 @@ a {
   color: var(--heading-color);
 }
 
+.btn--outline:hover {
+  background: var(--heading-color);
+  color: #fff;
+}
+
 @media (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
   }
+}
+
+/*Inputs*/
+
+.input {
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 2.5rem 5rem;
+  outline: none;
+  color: var(--heading-color);
+}
+
+::placeholder {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+@media (min-width: 1024px) {
+  .input {
+    padding: 2.2rem 4.2rem;
+  }
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+}
+
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+}
+
+.input-group .input {
+  border: none;
+  flex-grow: 1;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
