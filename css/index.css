@@ -151,3 +151,21 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/*Icons*/
+
+.icon-container {
+  height: 64px;
+  width: 64px;
+  background: #f3f9fa;
+  border-radius: 100%;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--primary {
+  fill: var(--primary-color);
+}
